@@ -1,0 +1,23 @@
+import { useQuery, useQueryClient } from 'react-query';
+
+interface SetGlobalState<T> {
+  (newState: T): void;
+}
+
+const GLOBAL_STATE_KEY_PREFIX = 'globalState';
+
+export default function useGlobalState<T>(key: string, initialState?: T): [T | undefined, SetGlobalState<T>] {
+  const queryClient = useQueryClient();
+
+  const stateKey = [GLOBAL_STATE_KEY_PREFIX, key];
+  const { data } = useQuery(stateKey, () => initialState, {
+    initialData: initialState,
+    staleTime: Infinity
+  });
+
+  const setData = (newState: T) => {
+    queryClient.setQueryData(stateKey, newState);
+  };
+
+  return [data, setData];
+}

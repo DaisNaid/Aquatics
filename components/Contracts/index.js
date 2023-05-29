@@ -1,4 +1,3 @@
-import IconLoader from 'icons';
 // import { getStyle } from 'utils/localizer';
 
 const Contracts = () => {
