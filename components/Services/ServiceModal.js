@@ -1,6 +1,6 @@
 import useGlobalState from 'hooks/useGlobalState';
 
-const MaintenanceModal = ({ modalType }) => {
+const ServiceModal = ({ modalType }) => {
     const [showServiceModal] = useGlobalState('serviceModal');
 
     return (
@@ -27,4 +27,4 @@ const MaintenanceModal = ({ modalType }) => {
     )
 };
 
-export default MaintenanceModal;
+export default ServiceModal;

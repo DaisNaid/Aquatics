@@ -1,5 +1,5 @@
 import IconLoader from 'icons';
-import MaintenanceModal from './MaintenanceModal';
+import ServiceModal from './ServiceModal';
 import useGlobalState from 'hooks/useGlobalState';
 import { useState } from 'react';
 // import { getStyle } from 'utils/localizer';
@@ -43,7 +43,7 @@ const Services = () => {
                     </div>
                 </div>
             </div>
-            <MaintenanceModal modalType={ modalType } />
+            <ServiceModal modalType={ modalType } />
         </div>
     )
 };
