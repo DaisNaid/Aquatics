@@ -17,7 +17,7 @@ module.exports = {
         'darkGrey': '#101010',
         'opaque': '#23333B',
       }
-    },
+    }
   },
   plugins: [],
 }
