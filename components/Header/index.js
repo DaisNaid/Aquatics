@@ -1,7 +1,7 @@
 const Header = () => {
     return (
-        <div className='text-3xl text-center bg-zinc-900 p-3 sticky top-0'>
-            Aqua
+        <div className='text-2xl text-center bg-black opacity-90 p-3 sticky top-0'>
+            Aquatics
         </div>
     )
 };
