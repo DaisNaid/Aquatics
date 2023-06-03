@@ -7,7 +7,7 @@ const FAQ = () => {
             <div className='text-center mb-14'>
                 <span className="font-bold text-3xl">FAQ</span>
             </div>
-            <div className='border border-tealGreen rounded bg-gradient-to-r from-zinc-900 via-zinc-900 to-opaque'>
+            <div className='border border-tealGreen rounded bg-gradient-to-r from-zinc-900 via-zinc-900 to-opaque grid grid-flow-row gap-2 py-1'>
                 <Disclosure>
                     {({ open }) => (
                     <>
@@ -21,11 +21,11 @@ const FAQ = () => {
                     </>
                     )}
                 </Disclosure>
-                <Disclosure>
+                {/* <Disclosure>
                     {({ open }) => (
                     <>
                         <Disclosure.Button className='py-2 flex mx-3'>
-                            <span>What should I do if my pond water looks green ehbeyeyeyu?</span>
+                            <span className=''>What should I do if my pond water looks green ehbeyeyeyu?</span>
                             <ChevronUpIcon className={`${ open ? '' : 'rotate-180 transform' } h-6 w-6 text-tealGreen absolute right-3`} />
                         </Disclosure.Button>
                         <Disclosure.Panel className='text-zinc-300 mx-3'>
@@ -33,7 +33,7 @@ const FAQ = () => {
                         </Disclosure.Panel>
                     </>
                     )}
-                </Disclosure>
+                </Disclosure> */}
             </div>
         </div>
     )
